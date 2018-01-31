@@ -1,0 +1,120 @@
+
+//.absolute-center-hori(0, 20vh);
+// .absolute-center-hori(@top, @bottom){
+// 	left: 0; 
+//   	right: 0; 
+//   	margin-left: auto; 
+//   	margin-right: auto;
+//   	top: @top;
+//   	bottom: @bottom;
+// }
+
+body {
+	margin: 0px;
+	background-color: #303030;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+}
+
+// general
+.section {
+	height: 100vh;
+	background: #404040;
+	.container {
+		height: 100%;
+		max-width: 1000px;
+		width: 100%;
+		margin: 0px auto;
+		border: 1px solid gray;
+	}
+}
+
+.active {
+	color: yellow;
+}
+
+// specific
+.section-home {
+	background: #202020;
+	text-align: center;
+	position: relative;
+	background-image: url("../img/notebook-h2000.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	img {
+		height: 200px;
+		width: 300px;
+		border: 1px solid gray;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	.description {
+		position: absolute;
+		font-size: 40px;
+		width: 70%;
+		// center horizontally
+		left: 0; 
+  		right: 0; 
+  		margin-left: auto; 
+  		margin-right: auto;
+  		// center horizontally
+  		top: 50vh;
+
+	}
+
+	.see-more {
+		font-size: 50px;
+		border: 3px solid gray;
+		width: 300px;
+		padding: 25px;
+		position: absolute;
+		// center horizontally
+		left: 0; 
+  		right: 0; 
+  		margin-left: auto; 
+  		margin-right: auto;
+  		// center horizontally
+		bottom: 20vh;
+		border-radius: 5px;
+	}
+}
+
+.section-projects {
+	
+}
+
+.section-blogs {
+		
+}
+	
+.section-contact {
+		
+}
+
+.nav {
+	display: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-show {
+	color: white;
+	width: 100vw;
+	height: 100px;
+	background-color: #202020;
+	font-size: 30px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+
+	.nav-link {
+		margin: 20px;
+	}
+}
+
+
+
+/*position fixed to pin it to the top*/
+
